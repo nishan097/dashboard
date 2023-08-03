@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 100px 200px 150px; 
+    grid-gap: 10px; 
+  }
+  .box {
+    background-color: #e3e3e3;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 20px;
+  }
