@@ -4,7 +4,6 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import CssBaseline from "@mui/material/CssBaseline";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
@@ -140,7 +139,7 @@ const Sidebar = () => {
             );
           })}
         </List>
-        <Divider style={{ backgroundColor: "#fcfcfc" }} />
+        {/* <Divider style={{ backgroundColor: "#fcfcfc" }} /> */}
        { /* <p>logout btn ata rakha</p>*/}
       </Drawer>
       <Main open={sideBarToggle}>
