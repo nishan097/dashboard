@@ -4,6 +4,7 @@ import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import MessageRoundedIcon from '@mui/icons-material/MessageRounded';
 import ViewColumnIcon from '@mui/icons-material/ViewColumn';
 import GroupsIcon from '@mui/icons-material/Groups';
+import PolylineOutlinedIcon from '@mui/icons-material/PolylineOutlined';
 import AddchartIcon from '@mui/icons-material/Addchart';
 export const menus = [
   {
@@ -34,7 +35,7 @@ export const menus = [
   },
   {
     name: "सरकार संस्थाको विवरण",
-    icon: <GroupRounded style={{ color: "#fcfcfc" }} />,
+    icon: <PolylineOutlinedIcon style={{ color: "#fcfcfc" }} />,
     path: "citizen",
     subMenus: [],
   },

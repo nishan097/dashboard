@@ -10,10 +10,22 @@ import {
 import React from "react";
 import DashCard from "../../global/card/DashCard";
 import { HouseOutlined } from "@mui/icons-material";
+import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
+import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
+import SynagogueOutlinedIcon from '@mui/icons-material/SynagogueOutlined';
 const cardData = [
   {
-    title: "Total Population",
-    count: "12",
+    title: " कुल जनसंख्या",
+    count: "८४",
+    icon: (
+      <GroupsOutlinedIcon
+        style={{ height: "70px", width: "100px", color: "skyblue" }}
+      />
+    ),
+  },
+  {
+    title: "कुल घरधुरी",
+    count: "२२",
     icon: (
       <HouseOutlined
         style={{ height: "70px", width: "100px", color: "skyblue" }}
@@ -21,28 +33,19 @@ const cardData = [
     ),
   },
   {
-    title: "Total House",
-    count: "12",
+    title: "कुल सरकारी संस्था",
+    count: "३",
     icon: (
-      <HouseOutlined
+      <SynagogueOutlinedIcon
         style={{ height: "70px", width: "100px", color: "skyblue" }}
       />
     ),
   },
   {
-    title: "Total Corporate",
-    count: "12",
+    title: "निजी संस्था",
+    count: "५",
     icon: (
-      <HouseOutlined
-        style={{ height: "70px", width: "100px", color: "skyblue" }}
-      />
-    ),
-  },
-  {
-    title: "Total Private Sector",
-    count: "12",
-    icon: (
-      <HouseOutlined
+      <BusinessOutlinedIcon
         style={{ height: "70px", width: "100px", color: "skyblue" }}
       />
     ),
@@ -69,15 +72,28 @@ const Dashboard = () => {
         <Grid container spacing={1}>
           <Grid item sm={12} md={6}>
             <Card>
-              <CardHeader title="Population Details" />
+              <CardHeader title="वार्ड अनुसार जनसंख्याको विवरण" />
               <CardContent>
-                this is for chart
+                <img src="./piechart.png" alt="" />
               </CardContent>
             </Card>
           </Grid>
           <Grid item sm={12} md={6}>
             <Card>
-              <CardHeader>Population Details</CardHeader>
+              <CardHeader title="जनसंख्या विवरण"></CardHeader>
+              <CardContent>
+                कुल जनसंख्या ८४
+              </CardContent>
+              <CardContent>
+                पुरुष ४७
+              </CardContent>
+
+              <CardContent>
+                महिला ३३
+              </CardContent>
+              <CardContent>
+                तेस्रो लिङ्गी/अन्य ४
+              </CardContent>
             </Card>
           </Grid>
         </Grid>
