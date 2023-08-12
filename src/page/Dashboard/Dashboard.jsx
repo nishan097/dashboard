@@ -1,9 +1,7 @@
 import {
-  Box,
   Card,
   CardContent,
   CardHeader,
-  Container,
   Grid,
   Stack,
 } from "@mui/material";
@@ -13,6 +11,7 @@ import { HouseOutlined } from "@mui/icons-material";
 import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
 import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
 import SynagogueOutlinedIcon from '@mui/icons-material/SynagogueOutlined';
+import DashboardChart from "./DashboardChart";
 const cardData = [
   {
     title: " कुल जनसंख्या",
@@ -74,7 +73,7 @@ const Dashboard = () => {
             <Card>
               <CardHeader title="वडा अनुसार जनसंख्याको विवरण" />
               <CardContent>
-                <img src="./piechart.png" alt="" />
+                <DashboardChart />
               </CardContent>
             </Card>
           </Grid>

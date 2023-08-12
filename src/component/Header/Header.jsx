@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
 import MuiAppBar from "@mui/material/AppBar";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Box, IconButton, Toolbar, Typography } from "@mui/material";
+import {
+  Box,
+  FormControl,
+  IconButton,
+  InputLabel,
+  MenuItem,
+  Select,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleSideBar } from "../../redux/features/appLayout/applayoutslice";
+import RenderInput from "../../global/Reusable/RenderInput";
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
@@ -25,6 +35,7 @@ const AppBar = styled(MuiAppBar, {
 
 export default function Header() {
   const open = useSelector((state) => state.sidebarConfigure.sideBarEnable);
+  const [value, setValue] = useState("");
   const dispatch = useDispatch();
   const handleDrawer = () => {
     dispatch(toggleSideBar());
@@ -49,23 +60,25 @@ export default function Header() {
           >
             <MenuIcon style={{ color: "#000" }} />
           </IconButton>
-          <div>
-            <Typography variant="h6" color={"#000"}>
-            आर्थिक वर्ष
-            </Typography>
-            </div>
+          <RenderInput
+            type="dropDown"
+            inputLable="आर्थिक वर्ष"
+            value={value}
+            handleChange={(e) => setValue(e.target.value)}
+            minWidth={200}
+            dropDownData={[
+              {
+                id: "7576",
+                value: "2075-2076",
+              },
+            ]}
+          />
         </Box>
-        <Typography  variant="h6" color={"#000"} >
-        ने
-            
-            </Typography>
-      
-        <Typography  variant="h6" color={"#000"} >
-              superadmin
-            
-            </Typography>
-      </Toolbar>
 
+        <div style={{display:'flex',gap:"4px",color:"#000"}}>
+         superadmin
+        </div>
+      </Toolbar>
     </AppBar>
   );
 }
