@@ -72,7 +72,7 @@ const Dashboard = () => {
         <Grid container spacing={1}>
           <Grid item sm={12} md={6}>
             <Card>
-              <CardHeader title="वार्ड अनुसार जनसंख्याको विवरण" />
+              <CardHeader title="वडा अनुसार जनसंख्याको विवरण" />
               <CardContent>
                 <img src="./piechart.png" alt="" />
               </CardContent>
