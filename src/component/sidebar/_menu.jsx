@@ -19,13 +19,39 @@ export const menus = [
     name: "कर्मचारी विवरण",
     icon: <SupervisedUserCircleRoundedIcon style={{ color: "#fcfcfc" }} />,
     path: "citizen",
-    subMenus: [],
+    subMenus: [
+      {
+        name: "कर्यरत कर्मचारी विवरण",
+       
+        path: "citizen",
+    },
+
+    {
+      name: "कर्मचारी विवरण थाप्नुहोस",
+     
+      path: "citizen",
+  },
+
+    ],
   },
   {
     name: "परिवार विवरण",
     icon: <GroupRounded style={{ color: "#fcfcfc" }} />,
     path: "citizen",
-    subMenus: [],
+    subMenus: [
+      {
+        name: "परिवारिक लगत",
+       
+        path: "citizen",
+    },
+  
+      {
+      name: "परिवारिक लगत थाप्नुहोस",
+     
+      path: "citizen",
+  },
+
+    ],
   },
   {
     name: "नागरीक",
@@ -34,10 +60,22 @@ export const menus = [
     subMenus: [],
   },
   {
-    name: "सरकार संस्थाको विवरण",
+    name: "सरकारी संस्थाको विवरण",
     icon: <PolylineOutlinedIcon style={{ color: "#fcfcfc" }} />,
     path: "citizen",
-    subMenus: [],
+    subMenus: [
+
+      { 
+        name: "सरकारी संस्थाको सूची",
+       
+        path: "citizen",
+    },
+    {
+      name: "सरकारी संस्था थप ",
+     
+      path: "citizen",
+  },
+    ],
   },
   {
     name: "निजी तर गैरसरकारी संस्थाको विवरण",

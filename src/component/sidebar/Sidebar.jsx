@@ -140,7 +140,7 @@ const Sidebar = () => {
           })}
         </List>
         {/* <Divider style={{ backgroundColor: "#fcfcfc" }} /> */}
-       { /* <p>logout btn ata rakha</p>*/}
+      
       </Drawer>
       <Main open={sideBarToggle}>
         <DrawerHeader />
